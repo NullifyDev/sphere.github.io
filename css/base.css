@@ -1,0 +1,258 @@
+@import url('./fonts/fontimport.css');
+
+:root {
+    --l0-bg-color: #0a0a0a;
+    --l1-bg-color: #090909;
+    --l2-bg-color: #0d0d0d;
+    --l3-bg-color: #101010;
+    --l4-bg-color: #171717;
+    --l5-bg-color: #181818;
+    --main-text-color: #ffffff;
+}
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
+    background-color: transparent;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--l4-bg-color);
+    font-family: "Helvetica World";
+    font-size: 18pt;
+    padding: 0px 0px 5px 0px;
+}
+
+#langname {
+    display: inline-block;
+    background-color: var(--l4-bg-color);
+    font-family: "Helvetica World";
+    font-weight: 400;
+    font-size: 18pt;
+    padding: 0px 0px 0px 10px;
+    margin: 0;
+    text-decoration: none;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerbutton {
+    padding: 0px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#buttons {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    padding: 0px 5vw 0px 0px;
+    text-decoration: none;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#homequote {
+    padding: 0px 20px;
+    margin: 5;
+    height: 10vh;
+    width: 65vw;
+    min-width: 680px;
+    max-width: 1025px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--l0-bg-color);
+    font-size: 16pt;
+    font-family: 'NeueMachina-Medium', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#section {
+    font-family: "RedHatDisplay", sans-serif;
+    font-weight: 700;
+}
+
+#description {
+    font-family: "Helvetica World", sans-serif;
+    margin: 10px 0px;
+}
+
+#container {
+    position: inherit;
+    background-color: var(--l1-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 75px 1fr;
+    /* Two columns of equal size */
+    height: 100vh;
+    /* Full viewport height */
+
+    padding: 30px;
+
+    width: 62.5vw;
+    min-width: 655px;
+    max-width: 1000px;
+}
+
+#coderesult {
+    position: inherit;
+    padding: 3px 10px;
+    background-color: var(--l2-bg-color);
+}
+
+#runbtn {
+    position: relative;
+    background-color: #4e4e4e
+        /* #00b267 */
+    ;
+    color: white;
+    border-radius: 5px;
+    height: 2vw;
+    min-height: 15px;
+    max-height: 32px;
+    font-family: "Futura PT";
+    font-weight: 500;
+    font-size: 1.3vw;
+    margin: 10px 0px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gitbtn {
+    position: relative;
+    background-color: #2a88bf
+        /* #00b267 */
+    ;
+    color: white;
+    border-radius: 5px;
+    height: 2vw;
+    min-height: 15px;
+    max-height: 32px;
+    font-family: "Futura PT";
+    font-weight: 500;
+    font-size: 1.5vw;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#githubsvg {
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+#command {
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px 10px;
+}
+
+
+/*
+#####################
+    CODE SNIPPET
+#####################
+*/
+
+#codesnippet {
+    background-color: var(--l1-bg-color);
+    min-width: 100px;
+    max-width: 500px;
+}
+
+#codesnippet-bg {
+    padding: 6px;
+    background-color: var(--l3-bg-color);
+    font-family: "consolas";
+}
+
+
+
+
+/*
+###################
+    CODE BLOCK
+###################
+*/
+
+#codeblock {
+    position: relative;
+    padding: 0.5vw 1vw 1vw 1vw;
+    display: inline-block;
+    width: 20vw;
+    min-width: 100px;
+    max-width: 500px;
+}
+
+#codeblock>#keyword {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "consolas";
+    color: #793bf4;
+    font-size: 12pt;
+}
+
+#codeblock>#identifier {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "consolas";
+    color: #318ffd;
+    font-size: 12pt;
+}
+
+#codeblock>#literal {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "consolas";
+    color: #318ffd;
+}
+
+#codeblock>#comment {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "consolas";
+    color: #363636;
+}
+
+#codeblock>#char {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "consolas";
+    color: #cccccc;
+}
