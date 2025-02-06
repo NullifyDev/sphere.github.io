@@ -10,249 +10,68 @@
     --main-text-color: #ffffff;
 }
 
-*,
 body {
     padding: 0;
     margin: 0;
-    background-color: black;
+    /* background-color: black; */
     color: white;
-}
 
-div,
-span,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-img {
-    background-color: transparent;
-}
+    height: 100vh;
+    width: 100vw;
 
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--l4-bg-color);
-    font-family: "Helvetica World";
-    font-size: 18pt;
-    padding: 0px 0px 5px 0px;
-}
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 
-#langname {
-    display: inline-block;
-    background-color: var(--l4-bg-color);
-    font-family: "Helvetica World";
-    font-weight: 400;
-    font-size: 18pt;
-    padding: 0px 0px 0px 10px;
+    background: linear-gradient(-45deg, #000, #0d0d0d, #000, #0d0d0d, #000);
+    background-size: 300% 300%;
+    animation: moveGradient 5s linear infinite;
+    height: 100vh;
+}   
+
+h1 {
+    font-size: 5vw;
+
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 72pt;
     margin: 0;
-    text-decoration: none;
-
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    height: 130px;
 }
 
-#headerbutton {
-    padding: 0px 10px;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-#buttons {
-    flex-grow: 1;
+#desc {
+    font-family: "Red Hat Display";
     display: flex;
-    justify-content: center;
-    font-weight: 200;
-    padding: 0px 5vw 0px 0px;
-    text-decoration: none;
+    margin: 0;
 }
 
-#main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#homequote {
-    padding: 0px 20px;
-    margin: 5;
-    height: 10vh;
-    width: 65vw;
-    min-width: 680px;
-    max-width: 1025px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--l0-bg-color);
-    font-size: 16pt;
-    font-family: 'NeueMachina-Medium', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#section {
-    font-family: "RedHatDisplay", sans-serif;
-    font-weight: 700;
-}
-
-#description {
-    font-family: "Helvetica World", sans-serif;
-    margin: 10px 0px;
+#desc>* {
+    margin: 0 5px;
 }
 
 #container {
-    position: inherit;
-    background-color: var(--l1-bg-color);
+    margin-bottom: 7vh;
     display: grid;
-    grid-template-columns: 1fr 75px 1fr;
-    /* Two columns of equal size */
-    height: 100vh;
-    /* Full viewport height */
-
-    padding: 30px;
-
-    width: 62.5vw;
-    min-width: 655px;
-    max-width: 1000px;
+    justify-items: center;
+    text-align: center;
+}
+a:visited {
+    color: rgb(171, 171, 171);
 }
 
-#coderesult {
-    position: inherit;
-    padding: 3px 10px;
-    background-color: var(--l2-bg-color);
-}
-
-#runbtn {
-    position: relative;
-    background-color: #4e4e4e
-        /* #00b267 */
-    ;
-    color: white;
-    border-radius: 5px;
-    height: 2vw;
-    min-height: 15px;
-    max-height: 32px;
-    font-family: "Futura PT";
-    font-weight: 500;
-    font-size: 1.3vw;
-    margin: 10px 0px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#gitbtn {
-    position: relative;
-    background-color: #2a88bf
-        /* #00b267 */
-    ;
-    color: white;
-    border-radius: 5px;
-    height: 2vw;
-    min-height: 15px;
-    max-height: 32px;
-    font-family: "Futura PT";
-    font-weight: 500;
-    font-size: 1.5vw;
-    padding: 0px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#githubsvg {
-    border-radius: 25px;
-    width: 20px;
-    height: 20px;
-    margin: 0px 10px 0px 10px;
-}
-
-#command {
-    background-color: #181818;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 3px 10px;
+a:link {
+    color: #fff;
 }
 
 
-/*
-#####################
-    CODE SNIPPET
-#####################
-*/
-
-#codesnippet {
-    background-color: var(--l1-bg-color);
-    min-width: 100px;
-    max-width: 500px;
-}
-
-#codesnippet-bg {
-    padding: 6px;
-    background-color: var(--l3-bg-color);
-    font-family: "consolas";
-}
-
-
-
-
-/*
-###################
-    CODE BLOCK
-###################
-*/
-
-#codeblock {
-    position: relative;
-    padding: 0.5vw 1vw 1vw 1vw;
-    display: inline-block;
-    width: 20vw;
-    min-width: 100px;
-    max-width: 500px;
-}
-
-#codeblock>#keyword {
-    display: inline-block;
-    background-color: transparent;
-    font-family: "consolas";
-    color: #793bf4;
-    font-size: 12pt;
-}
-
-#codeblock>#identifier {
-    display: inline-block;
-    background-color: transparent;
-    font-family: "consolas";
-    color: #318ffd;
-    font-size: 12pt;
-}
-
-#codeblock>#literal {
-    display: inline-block;
-    background-color: transparent;
-    font-family: "consolas";
-    color: #318ffd;
-}
-
-#codeblock>#comment {
-    display: inline-block;
-    background-color: transparent;
-    font-family: "consolas";
-    color: #363636;
-}
-
-#codeblock>#char {
-    display: inline-block;
-    background-color: transparent;
-    font-family: "consolas";
-    color: #cccccc;
+@keyframes moveGradient {
+    0% {
+        background-position: 90% 90%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
