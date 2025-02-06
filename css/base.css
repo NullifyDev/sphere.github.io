@@ -32,8 +32,6 @@ body {
 }
 
 h1 {
-    font-size: 5vw;
-
     font-family: "Poppins", serif;
     font-weight: 600;
     font-style: normal;
@@ -43,7 +41,7 @@ h1 {
 }
 
 #desc {
-    font-family: "Red Hat Display";
+    font-family: "Red Hat Display", serif;
     display: flex;
     font-size: clamp(8pt, 1vw, 24pt);
     margin: 0;
