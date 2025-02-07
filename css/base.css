@@ -1,12 +1,13 @@
 @import url('./fonts/fontimport.css');
 
 :root {
-    --l0-bg-color: #0a0a0a;
-    --l1-bg-color: #090909;
-    --l2-bg-color: #0d0d0d;
-    --l3-bg-color: #101010;
-    --l4-bg-color: #171717;
-    --l5-bg-color: #181818;
+    --l0-bg-color: #000000;
+    --l1-bg-color: #0a0a0a;
+    --l2-bg-color: #090909;
+    --l3-bg-color: #0d0d0d;
+    --l4-bg-color: #101010;
+    --l5-bg-color: #171717;
+    --l6-bg-color: #181818;
     --main-text-color: #ffffff;
 }
 
@@ -25,7 +26,7 @@ body {
     align-items: center;
     align-content: center;
 
-    background: linear-gradient(-45deg, #000, #0d0d0d, #000, #0d0d0d, #000);
+    background: linear-gradient(-45deg, var(--l0-bg-color), var(--l5-bg-color), var(--l0-bg-color), var(--l5-bg-color));
     background-size: 300% 300%;
     animation: moveGradient 5s linear infinite;
     height: 100vh;
@@ -69,11 +70,11 @@ a:link {
 
 @keyframes moveGradient {
     0% {
-        background-position: 90% 90%;
+        background-position: 100% 100%;
     }
 
     100% {
-        background-position: 10% 10%;
+        background-position: 0% 0%;
     }
 }
 
