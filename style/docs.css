@@ -23,7 +23,7 @@
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-    -ms-user-select: none;
+-ms-user-select: none;	
 }
 
 body {
@@ -55,6 +55,7 @@ body {
 	height: fit-content;
 
 	font-size: clamp(12pt, 3vw, 18pt);
+	margin-bottom: 5vw;
 }
 
 #motto {

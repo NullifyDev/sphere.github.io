@@ -1,6 +1,13 @@
 @import url("./menu/base.css");
 @import url("./menu/elements/back.css");
 
+* {
+	-webkit-user-select: text;
+	-moz-user-select: text;    
+	-ms-user-select: text;      
+	user-select: text;
+}
+
 #pfp {
 	width: 5vw;
 	border-radius: 50%;
@@ -36,13 +43,14 @@
 #msg,
 #msg > * {
 	white-space: pre-wrap;
-	font-size: clamp(6pt, 1.5vw, 18pt);
+	font-size: clamp(6pt, 1.5vw, 16pt);
 	/* padd/ing: 0 5vw; */
 }
 
 #base {
 	margin: 0 5vw;
 	margin-bottom: 3vw;
+margin-left: 11vw;
 }
 
 #back {
