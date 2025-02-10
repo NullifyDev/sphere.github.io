@@ -1,0 +1,176 @@
+@import url("./base.css");
+@import url("./menu/elements/back.css");
+
+* {
+	background: transparent; /* (var(--l0-bg-color); */
+	color: var(--main-text-color);
+
+	margin: 0;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	font-family: "Red Hat Display", serif;
+	cursor: alias;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+
+	-user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+
+
+	background: linear-gradient(-45deg, var(--l0-bg-color), var(--l1-bg-color), var(--l0-bg-color), var(--l1-bg-color));
+    background-size: 300% 300%;
+    animation: moveGradient 5s linear infinite;
+}
+
+#intro {
+	margin: 0;
+
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+
+	height: fit-content;
+
+	font-size: clamp(12pt, 3vw, 18pt);
+}
+
+#motto {
+	font-size: clamp(12pt, 1vw, 16pt);
+}
+
+#nullifydev {
+	display: flex;
+	min-height: 5vh;
+}
+
+#nullifydev > p {
+	margin: 0;
+}
+
+#nullify,
+#dev{
+	font-weight: 800;
+	font-size: clamp(22pt, 8vw, 72pt);
+}
+
+#dev {
+	color: var(--faded-text-color)  /* #dfdfdfff; */;
+	display: inline;
+}
+
+.btn {
+	font-weight: 400;
+	font-size: clamp(18pt, 1.5vw, 48pt);
+	text-decoration: none;
+	background: linear-gradient(90deg, white, white, white) 
+    bottom  /var(--d, 0) 2px no-repeat;
+  	transition: 0.1s;
+}
+
+.btn:hover {
+	text-decoration: underline;				
+	--d: 300%;
+}
+
+
+#btns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	/* width: 100%; */
+	margin-top: 6vw;
+	margin-right: 3vw;
+	width: 50vw;
+	min-width: 465px;
+}
+
+#base {
+	width: 75vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 1vw;
+	min-width: clamp(200px, 5vw, 1000px);
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@media only screen and (max-width: 720px) { 
+	#motto {
+		text-align: center;
+	}
+	
+	#intro {
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	#btns {
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		margin-top: 10vw;
+	}
+	
+	.btn {
+		text-align: center;
+		font-size: clamp(12pt, 5vw, 24pt);
+		/* white-space: 2vw; */
+	}
+
+	#base {
+		width: clamp(100px, 80vw, 720px);
+	}
+
+	#nullify,
+	#dev {
+		font-size: clamp(12pt, 11vw, 96pt);
+	}
+}
+
+@media only screen and (max-height: 930px) { 
+	#nullifydev {
+		size:  clamp(25px, 15vh, 500px);
+	}
+
+	#btns{
+		margin-top: 6vh;
+	}
+}

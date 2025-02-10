@@ -1,0 +1,50 @@
+@import url("./menu/base.css");
+@import url("./menu/elements/back.css");
+
+#pfp {
+	width: 5vw;
+	border-radius: 50%;
+}
+
+#subject {
+	display: flex;
+	align-items: center;
+}
+
+#nullifydev {
+	margin-left: 1vw;
+
+	display: flex;
+	align-items: center;
+}
+
+#nullifydev > p {
+	margin: 0;
+}
+
+#nullify,
+#dev{
+	font-weight: 800;
+	font-size: clamp(22pt, 3vw, 60pt);
+}
+
+#dev {
+	color: var(--faded-text-color);
+	display: inline;
+}
+
+#msg,
+#msg > * {
+	white-space: pre-wrap;
+	font-size: clamp(6pt, 1.5vw, 18pt);
+	/* padd/ing: 0 5vw; */
+}
+
+#base {
+	margin: 0 5vw;
+	margin-bottom: 3vw;
+}
+
+#back {
+	bottom: 6vw;
+}

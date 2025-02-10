@@ -1,0 +1,24 @@
+:root {
+    --l0-bg-color: #000000;
+    --l1-bg-color: #202020;
+
+    --main-text-color: #ffffff;
+	--faded-text-color: #303030ff;
+}
+
+* {
+    font-family: "Red Hat Display", serif;
+    color: white;
+
+    -webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+
+	-user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

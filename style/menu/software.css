@@ -1,0 +1,96 @@
+* {
+	background: transparent; /* (var(--l0-bg-color); */
+	color: var(--main-text-color);
+
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	font-family: "Red Hat Display", serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+	margin: 0;
+
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+
+	background: linear-gradient(-45deg, var(--l0-bg-color), var(--l1-bg-color), var(--l0-bg-color), var(--l1-bg-color));
+    background-size: 300% 300%;
+    animation: moveGradient 5s linear infinite;
+}
+
+
+#intro > * {
+	margin: 0;
+
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+}
+
+#nullifydev {
+	display: flex;
+	/* margin-left: clamp(10px, 11vw, 1000px); */
+	height: 6vw;
+}
+
+#nullify,
+#dev{
+	font-weight: 800;
+	font-size: clamp(48pt, 6vw, 120pt);
+}
+
+#dev {
+	color: var(--faded-text-color)  /* #dfdfdfff; */;
+	display: inline;
+}
+
+#motto {
+	font-weight: 500;
+}
+
+.btn {
+	font-weight: 400;
+	font-size: clamp(6pt, 1.25vw, 48pt);
+	text-decoration: none;
+}
+
+.btn:hover {
+	text-decoration: underline;
+}
+
+#btns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	width: 100%;
+	margin-top: 6vw;
+}
+
+#base {
+	width: 50vw;
+
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1vw;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}

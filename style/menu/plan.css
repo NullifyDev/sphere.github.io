@@ -1,0 +1,11 @@
+@import url("./base.css");
+@import url("./elements/back.css");
+
+#plandiagram {
+	width: 60vw;
+	margin-bottom: 5vw;
+}
+
+#back {
+	bottom: 8vw;
+}
