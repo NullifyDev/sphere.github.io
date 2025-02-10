@@ -9,7 +9,7 @@
 }
 
 #pfp {
-	width: 5vw;
+width: clamp(59px, 5vw, 100px);		
 	border-radius: 50%;
 }
 
@@ -43,14 +43,14 @@
 #msg,
 #msg > * {
 	white-space: pre-wrap;
-	font-size: clamp(6pt, 1.5vw, 16pt);
+	font-size: clamp(12pt, 1.5vw, 16pt);
 	/* padd/ing: 0 5vw; */
 }
 
 #base {
 	margin: 0 5vw;
 	margin-bottom: 3vw;
-margin-left: 11vw;
+	margin-left: 11vw;
 }
 
 #back {

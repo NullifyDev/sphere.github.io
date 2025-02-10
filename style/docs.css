@@ -11,19 +11,11 @@
 	overflow-y: hidden;
 
 	font-family: "Red Hat Display", serif;
-	cursor: alias;
 
 	-webkit-user-select: none;
-	-moz-user-select: none;    
-	-ms-user-select: none;      
+	-moz-user-select: none; 
+	-ms-user-select: none;
 	user-select: none;
-
-	-user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
--ms-user-select: none;	
 }
 
 body {
@@ -35,7 +27,6 @@ body {
 	justify-items: center;
 	align-content: center;
 	align-items: center;
-
 
 	background: linear-gradient(-45deg, var(--l0-bg-color), var(--l1-bg-color), var(--l0-bg-color), var(--l1-bg-color));
     background-size: 300% 300%;
@@ -72,7 +63,7 @@ body {
 }
 
 #nullify,
-#dev{
+#dev {
 	font-weight: 800;
 	font-size: clamp(22pt, 8vw, 72pt);
 }
