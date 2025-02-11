@@ -1,4 +1,4 @@
-@import url("./menu/base.css");
+@import url("./menu/elements/animated-bg.css");
 @import url("./menu/elements/back.css");
 
 * {
@@ -24,11 +24,6 @@ width: clamp(59px, 5vw, 100px);
 	display: flex;
 	align-items: center;
 }
-
-#nullifydev > p {
-	margin: 0;
-}
-
 #nullify,
 #dev{
 	font-weight: 800;
@@ -37,14 +32,12 @@ width: clamp(59px, 5vw, 100px);
 
 #dev {
 	color: var(--faded-text-color);
-	display: inline;
 }
 
 #msg,
 #msg > * {
 	white-space: pre-wrap;
 	font-size: clamp(12pt, 1.5vw, 16pt);
-	/* padd/ing: 0 5vw; */
 }
 
 #base {

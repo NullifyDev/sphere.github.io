@@ -1,33 +1,9 @@
-@import url("./base.css");
+@import url("./menu/elements/animated-bg.css");
 @import url("./menu/elements/back.css");
 
 * {
-	background: transparent; /* (var(--l0-bg-color); */
-	color: var(--main-text-color);
-
 	margin: 0;
-
-	overflow-x: hidden;
-	overflow-y: hidden;
-
-	font-family: "Red Hat Display", serif;
 	cursor: default;
-}
-
-body {
-	width: 100vw;
-	height: 100vh;
-
-	display: grid;
-	justify-content: center;
-	justify-items: center;
-	align-content: center;
-	align-items: center;
-
-
-	background: linear-gradient(-45deg, var(--l0-bg-color), var(--l1-bg-color), var(--l0-bg-color), var(--l1-bg-color));
-    background-size: 300% 300%;
-    animation: moveGradient 5s linear infinite;
 }
 
 #intro {
@@ -41,7 +17,7 @@ body {
 	text-align: center;
 
 	height: fit-content;
-	font-size: clamp(12pt, 1vw, 16pt);
+	font-size: clamp(12pt, 2vw, 16pt);
 }
 
 #nullifydev {
@@ -70,12 +46,12 @@ body {
 	text-decoration: none;
 	background: linear-gradient(90deg, white, white, white) 
     bottom  /var(--d, 0) 2px no-repeat;
-  	transition: 0.1s;
+  	transition: 0.3s;
 }
 
 .btn:hover {
-	text-decoration: underline;				
 	--d: 300%;
+	transition: 0.1s;
 }
 
 
@@ -84,7 +60,6 @@ body {
 	flex-direction: row;
 	justify-content: space-evenly;
 
-	/* width: 100%; */
 	margin-top: 6vw;
 	margin-right: 3vw;
 	width: 50vw;
@@ -100,16 +75,6 @@ body {
 
 	margin-bottom: 1vw;
 	min-width: clamp(200px, 5vw, 1000px);
-}
-
-@keyframes moveGradient {
-    0% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
 }
 
 @media only screen and (max-width: 720px) { 

@@ -1,26 +1,25 @@
 :root {
     --l0-bg-color: #000000;
-    --l1-bg-color: #202020;
+    --l1-bg-color: #232323;
 
     --main-text-color: #ffffff;
-	--faded-text-color: rgb(90, 90, 90);
+	--faded-text-color: #373737;
 }
 
 * {
     font-family: "Red Hat Display", serif;
-    color: white;
+    color: var(--main-text-color);
 
     -webkit-user-select: none;  
-	-moz-user-select: none;    
-	-ms-user-select: none;      
+	-moz-user-select: none;
 	user-select: none;
-
-	-user-drag: none;
-    -webkit-user-drag: none;
     user-select: none;
-    -moz-user-select: none;
     -webkit-user-select: none;
-    -ms-user-select: none;
 
     cursor: default;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+    font-family: "Red Hat Display", serif;
 }
