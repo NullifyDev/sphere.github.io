@@ -9,7 +9,7 @@
 }
 
 #pfp {
-width: clamp(59px, 5vw, 100px);		
+	width: clamp(59px, 5vw, 100px);		
 	border-radius: 50%;
 }
 
@@ -36,8 +36,12 @@ width: clamp(59px, 5vw, 100px);
 
 #msg,
 #msg > * {
-	white-space: pre-wrap;
-	font-size: clamp(12pt, 1.5vw, 16pt);
+	white-space: pre-wrap;	
+	font-size: clamp(10pt, 1vw, 16pt);
+	text-align: justify;
+	text-justify: inter-word;
+
+	min-width: 260px;
 }
 
 #base {
@@ -48,4 +52,23 @@ width: clamp(59px, 5vw, 100px);
 
 #back {
 	bottom: 6vw;
+}
+
+@media screen and (max-width: 720px) {
+
+	b {
+		text-align: center;
+	}
+
+	br {
+		display: none;
+	}
+}
+@media screen and (max-width: 450px) {
+	#base {
+		margin: 0 5vw;
+	}
+	#msg {
+		font-size: clamp(10pt, 1vh, 16pt);
+	}
 }
