@@ -3,13 +3,13 @@
 
 * {
 	-webkit-user-select: text;
-	-moz-user-select: text;    
-	-ms-user-select: text;      
+	-moz-user-select: text;
+	-ms-user-select: text;
 	user-select: text;
 }
 
 #pfp {
-	width: clamp(59px, 5vw, 100px);		
+	width: clamp(59px, 5vw, 100px);
 	border-radius: 50%;
 }
 
@@ -24,8 +24,9 @@
 	display: flex;
 	align-items: center;
 }
+
 #nullify,
-#dev{
+#dev {
 	font-weight: 800;
 	font-size: clamp(22pt, 3vw, 60pt);
 }
@@ -35,9 +36,9 @@
 }
 
 #msg,
-#msg > * {
-	white-space: pre-wrap;	
-	font-size: clamp(10pt, 1vw, 16pt);
+#msg>* {
+	white-space: pre-wrap;
+	font-size: clamp(10pt, 1vw, 12pt);
 	text-align: justify;
 	text-justify: inter-word;
 
@@ -46,16 +47,24 @@
 
 #msg {
 	margin-left: 2vw;
+	margin-bottom: 3vw;
 }
 
 #base {
 	margin: 0 5vw;
-	margin-bottom: 3vw;
+	/* margin-bottom: 3vw; */
 	margin-left: 10vw;
 }
 
 #back {
 	bottom: 6vw;
+}
+
+#theme {
+	position: absolute;
+	margin: 0;
+	bottom: clamp(100px, 10vw, 600px);
+	/* margin-bottom: 1vw; */
 }
 
 @media screen and (max-width: 720px) {
@@ -68,10 +77,12 @@
 		display: none;
 	}
 }
+
 @media screen and (max-width: 450px) {
 	#base {
 		margin: 0 5vw;
 	}
+
 	#msg {
 		font-size: clamp(10pt, 1vh, 16pt);
 	}

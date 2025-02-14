@@ -1,11 +1,15 @@
 @import url("./elements/animated-bg.css");
 @import url("./elements/back.css");
 
-#plandiagram {
+#plan {
 	width: 60vw;
-	margin-bottom: 5vw;
+	margin-bottom: 2vw;
 }
 
 #back {
-	bottom: 8vw;
+	bottom: 6vw;
+}
+
+#theme {
+	margin-top: clamp(50px, 2vw, 500px);
 }

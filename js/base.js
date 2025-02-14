@@ -40,4 +40,13 @@ function getTheme() {
 		theme.src = "/media/img/moon.svg" 
 		document.documentElement.style.cssText = "--l0-bg-color: #000000; --l1-bg-color: #232323; --main-text-color: #ffffff; --faded-text-color: #373737"
 	}
+
+	let loc = window.location.href;
+	if (loc.endsWith("/pages/menu/plan.html")) {
+		document.getElementById("plan").src = localStorage.getItem("isLight") == "1" ? 
+			"../../media/img/plan.light.svg" : "../../media/img/plan.dark.svg"
+	} else if (loc.endsWith("/pages/aboutme.html")) {
+		document.getElementById("pfp").src = localStorage.getItem("isLight") == "1" ? 
+			"../media/img/pfp.light.svg" : "../media/img/pfp.dark.svg"
+	}
 }

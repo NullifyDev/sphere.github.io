@@ -27,5 +27,5 @@
 #theme {
     width: clamp(25px, 2vw, 100px);
     height: clamp(25px, 2vw, 100px);
-    margin-top: clamp(100px, 4vw, 500px);        
+    margin-top: clamp(100px, 4vw, 500px);   
 }
