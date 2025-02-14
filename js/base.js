@@ -3,7 +3,7 @@ let theme = document.createElement("img");
 
 
 (function() {
-	if (localStorage.getItem("isLight") == undefined) localStorage.setItem("0")
+	if (localStorage.getItem("isLight") == undefined) localStorage.setItem("isLight", "0")
 	document.querySelectorAll('a[href]').forEach(l => {
 		a.push([l.textContent, l.getAttribute('href')]);
 		l.removeAttribute('href');
