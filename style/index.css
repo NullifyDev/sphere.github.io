@@ -44,7 +44,7 @@
 	font-weight: 400;
 	font-size: clamp(18pt, 1.5vw, 48pt);
 	text-decoration: none;
-	background: linear-gradient(90deg, white, white, white) 
+	background: linear-gradient(90deg, var(--main-text-color), var(--main-text-color), var(--main-text-color)) 
     bottom  /var(--d, 0) 2px no-repeat;
   	transition: 0.3s;
 }
@@ -60,7 +60,7 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 
-	margin-top: 6vw;
+	margin-top: 4vw;
 	margin-right: 3vw;
 	width: 50vw;
 	min-width: 465px;
@@ -73,7 +73,7 @@
 	flex-direction: column;
 	align-items: center;
 
-	margin-bottom: 1vw;
+	/* margin-bottom: 1vw; */
 	min-width: clamp(200px, 5vw, 1000px);
 }
 

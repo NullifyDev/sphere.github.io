@@ -44,10 +44,14 @@
 	min-width: 260px;
 }
 
+#msg {
+	margin-left: 2vw;
+}
+
 #base {
 	margin: 0 5vw;
 	margin-bottom: 3vw;
-	margin-left: 11vw;
+	margin-left: 10vw;
 }
 
 #back {
