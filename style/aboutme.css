@@ -52,7 +52,6 @@
 
 #base {
 	margin: 0 5vw;
-	/* margin-bottom: 3vw; */
 	margin-left: 10vw;
 }
 
@@ -64,25 +63,20 @@
 	position: absolute;
 	margin: 0;
 	bottom: clamp(100px, 10vw, 600px);
-	/* margin-bottom: 1vw; */
 }
 
 @media screen and (max-width: 720px) {
-
 	b {
 		text-align: center;
 	}
-
 	br {
 		display: none;
 	}
 }
-
 @media screen and (max-width: 450px) {
 	#base {
 		margin: 0 5vw;
 	}
-
 	#msg {
 		font-size: clamp(10pt, 1vh, 16pt);
 	}

@@ -7,9 +7,14 @@
 }
 
 #back {
-	bottom: 6vw;
+	bottom: 4vw;
 }
 
 #theme {
 	margin-top: clamp(50px, 2vw, 500px);
+}
+
+#base {
+	display: grid;
+	justify-items: center;
 }
