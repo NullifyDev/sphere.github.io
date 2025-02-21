@@ -15,7 +15,9 @@ let theme = document.createElement("img");
 		toggleTheme();
 		getTheme();
 	})
-	document.getElementById("base").appendChild(theme);
+	if (window.location.href.endsWith("/pages/menu/plan.html")) document.getElementById("base").appendChild(theme);
+	else document.getElementById("container").appendChild(theme);
+	// else document.body.appendChild(theme);
 	getTheme();
 })();
 
@@ -38,14 +40,14 @@ function getTheme() {
 
 		let loc = window.location.href;
 		if (loc.endsWith("/pages/menu/plan.html"))    document.getElementById("plan").src = "../../media/img/plan.light.svg";
-		else if (loc.endsWith("/pages/aboutme.html")) document.getElementById("pfp").src = "../media/img/pfp.light.svg"
+		else if (loc.endsWith("/pages/aboutme.html")) document.getElementById("pfp" ).src =    "../media/img/pfp.light.svg";
 	}
 	else {
 		theme.src = "/media/img/moon.svg" 
 		document.documentElement.style.cssText = "--l0-bg-color: #000000; --l1-bg-color: #232323; --main-text-color: #ffffff; --faded-text-color: #373737"
 
 		let loc = window.location.href;
-		if (loc.endsWith("/pages/menu/plan.html"))    document.getElementById("plan").src = "../../media/img/plan.dark.svg";
-		else if (loc.endsWith("/pages/aboutme.html")) document.getElementById("pfp").src = "../media/img/pfp.dark.svg"
+			 if (loc.endsWith("/pages/menu/plan.html")) document.getElementById("plan").src = "../../media/img/plan.dark.svg";
+		else if (loc.endsWith("/pages/aboutme.html"))   document.getElementById("pfp").src =    "../media/img/pfp.dark.svg";
 	}
 }

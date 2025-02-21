@@ -75,6 +75,7 @@
 
 	/* margin-bottom: 1vw; */
 	min-width: clamp(200px, 5vw, 1000px);
+	margin-bottom: clamp(0px, )
 }
 
 @media only screen and (max-width: 720px) { 
@@ -99,7 +100,7 @@
 	
 	.btn {
 		text-align: center;
-		font-size: clamp(12pt, 5vw, 24pt);
+		font-size: clamp(12pt, 5vw, 18pt);
 		/* white-space: 2vw; */
 	}
 
@@ -110,6 +111,13 @@
 	#nullify,
 	#dev {
 		font-size: clamp(12pt, 11vw, 96pt);
+	}
+}
+
+@media only screen and (max-height: 720px) {
+	#btns {
+		margin-top: 3vh;
+		/* white-space: 2vw; */
 	}
 }
 

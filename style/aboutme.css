@@ -35,19 +35,20 @@
 	color: var(--faded-text-color);
 }
 
-#msg,
-#msg>* {
+#msg {
 	white-space: pre-wrap;
 	font-size: clamp(10pt, 1vw, 12pt);
 	text-align: justify;
 	text-justify: inter-word;
 
 	min-width: 260px;
-}
-
-#msg {
 	margin-left: 2vw;
 	margin-bottom: 3vw;
+}
+
+#msg>* {
+	margin-left: 0;
+	margin-bottom: 0;
 }
 
 #base {
@@ -62,22 +63,30 @@
 #theme {
 	position: absolute;
 	margin: 0;
-	bottom: clamp(100px, 10vw, 600px);
+	bottom: clamp(140px, 12vw, 200px);
 }
 
 @media screen and (max-width: 720px) {
 	b {
 		text-align: center;
 	}
-	br {
-		display: none;
-	}
 }
+
 @media screen and (max-width: 450px) {
 	#base {
 		margin: 0 5vw;
 	}
+
 	#msg {
 		font-size: clamp(10pt, 1vh, 16pt);
+	}
+	br {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	#theme {
+		bottom: clamp(100px, 12vw, 160px);
 	}
 }

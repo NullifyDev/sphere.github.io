@@ -11,7 +11,7 @@
 }
 
 #theme {
-	margin-top: clamp(50px, 2vw, 500px);
+	bottom: clamp(75px, 10vw, 150px);
 }
 
 #base {

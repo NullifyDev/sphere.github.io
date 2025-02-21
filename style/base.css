@@ -25,7 +25,25 @@
 }
 
 #theme {
+    position: absolute;
     width: clamp(25px, 2vw, 100px);
     height: clamp(25px, 2vw, 100px);
-    margin-top: clamp(100px, 4vw, 500px);   
+    bottom: clamp(100px, 15vw, 1500px);
+    /* margin-top: clamp(100px, 4vw, 500px); */
+}
+
+#theme:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-height: 560px) {
+	#theme {
+		bottom: clamp(50px, 10vw, 1000px);
+	}
+}
+
+@media screen and (max-width: 560px) {
+    #theme {
+		bottom: clamp(50px, 10vh, 1000px);
+	}
 }
