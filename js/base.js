@@ -16,7 +16,7 @@ let theme = document.createElement("img");
 		getTheme();
 	})
 	if (window.location.href.endsWith("/pages/menu/plan.html")) document.getElementById("base").appendChild(theme);
-	else document.getElementById("container").appendChild(theme);
+	else document.body.appendChild(theme);
 	// else document.body.appendChild(theme);
 	getTheme();
 })();

@@ -28,7 +28,7 @@
     position: absolute;
     width: clamp(25px, 2vw, 100px);
     height: clamp(25px, 2vw, 100px);
-    bottom: clamp(100px, 15vw, 1500px);
+    bottom: clamp(100px, 15vw, 200px);
     /* margin-top: clamp(100px, 4vw, 500px); */
 }
 
